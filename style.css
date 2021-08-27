@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background-color: rgb(140, 192, 195);
+}
+
+.background{
+    width: 1440px;
+    height: 80vh;
+    margin:auto;
+    margin-top: 10vh;
+    position:relative;
+    background:bottom no-repeat url(/images/pattern-background-desktop.svg);
+    background-size: cover;
+}
+
+.container{
+    background: white;
+    width: 450px;
+    height: 85%;
+    position:absolute;
+    top:10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+.container img{
+    border-radius: 20px 20px 0 0;
+}
+
+.title{
+    font-weight: 900;
+    font-size: 1.7rem;
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    margin-top: 25px;
+}
+
+.container > .standard-text{
+    font-size: 16px;
+    text-align: center;
+    padding: 0 15%;
+    margin: 20px auto;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan{
+    background-color: hsl(225, 100%, 98%);
+    width: 80%;
+    border-radius: 10px;
+    margin: auto;
+    display:flex;
+}
+
+.plan .music-icon{
+    height: 50px;
+    margin: 20px;
+}
+
+.plan .price{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    margin:auto 0;
+}
+
+.bold-text{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);;
+}
+
+.plan .standard-text{
+    color: hsl(224, 23%, 55%);
+}
+
+.link{
+    flex: 1;
+    margin: auto;
+    font-weight: 700;
+}
+
+.link:hover{
+    text-decoration: none;
+    color:hsl(298, 86%, 34%);
+}
+
+.btn-container{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 8% 10%;
+    grid-gap: 20px;
+}
+
+.payment{
+    background-color: hsl(245, 75%, 52%);
+    width: 100%;
+    margin: auto;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    color:white;
+    font-size: 16px;
+    box-shadow: 0 5px 10px black ;
+}
+
+.payment:hover{
+    background-color:hsl(298, 86%, 34%);
+}
+
+.cancel{
+    margin: auto;
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+
+@media(max-width: 768px){
+    .background{
+        width: 100%;
+        margin: 0;
+    }
+
+    .container{
+        width: 375px;
+        height: auto;
+        position:relative;
+    }
+
+    .container img{
+        width:375px;
+    }
+
+    .plan .music-icon{
+        width: 20%;
+    }
+}
